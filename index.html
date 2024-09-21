@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCKAP QA Touch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha514-Kc444vGBEqzTmouAECnVceyQqyqdsSiqLQISBL49aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="header-logo">
+
+            </div>
+            <div class="nav-items">
+                <ul class="nav-list">
+                    <li class="feature-nav list-1">Features <i class="fa-solid fa-angle-down"></i></li>             
+                    <li class="feature-nav list-2">Integrations<i class="fa-solid fa-angle-down"></i></li>
+                    <li class="feature-nav">Case Studies</li>                    
+                    <li class="feature-nav list-3">Resources<i class="fa-solid fa-angle-down"></i></li>
+                    <li class="feature-nav">Pricing</li>
+                    <li><button type="button" class="nav-btn1">Product Tour</button></li>
+                    <li><button type="button" class="nav-btn2">Get Started</button>  </li>
+                    <li class="feature-nav"><button type="button" class="nav-btn3">Sign In</button></li>
+                    <li><i id="closer" onclick="closer()" class="fa-solid fa-xmark"></i></li>
+                </ul>
+            
+            </div>  
+             <div class="menu-line">
+                <i class="fa-solid fa-bars" onclick="opener()"></i>
+             </div>
+          
+        </header>
+
+        <div class="description-feature">
+
+            <div class="feature-sub-cont">
+                <div class="feature-1">
+                    <h4 class="feature-heading">VALUE ADDED FEATURES</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Features value added img/analytics.webp" alt="Features-image" class="feature-img">
+                        <div>
+                            <h4>Reports</h4>
+                            <p>Reports enable you to generate reports on activities and actions by users across projects</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Features value added img/mind.webp" alt="Features-image" class="feature-img">
+                        <div>
+                            <h4>Mind Map</h4>
+                        <p>Offers a graphical way to represent ideas and concepts</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Features value added img/dashboard.webp" alt="Features-image" class="feature-img">
+                        <div>
+                            <h4>Shareable Dashboard</h4>
+                            <p>The public shareable dashboard can be viewed across the web without login in QA Touch</p>
+                        </div>                       
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Features value added img/statistics.webp" alt="Features-image" class="feature-img">
+                        <div>
+                            <h4>Performance Metrics</h4>
+                            <p>Provides Performance Metrics by Lighthouse – an open-source automated tool</p>
+                        </div> 
+                    </div> 
+                </div>      
+                <div class="feature-2">
+                    <h4 class="feature-heading">COOL FEATURES</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers Cool/curriculum.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>Activity Log</h4>
+                            <p>An eagle-eye view of all activities. Manage and Track all project actions in one place</p>
+                        </div>
+                    </div>
+            
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers Cool/video-record.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>Screen Recording of Issues</h4>
+                            <p>Record your screen and Add Issues at one go without any external tools</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers Cool/audio.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>BDD Script</h4>
+                            <p>Supports In-built Template to write BDD Test Cases</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers Cool/calendar.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>Elapsed Time </h4>
+                            <p>Record, Manage and Track the Time Taken to execute a Test Case / Test Case step</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-3">
+                    <h4 class="feature-heading">SSO SETTINGS</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers sso/profile.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>  OKTA SSO</h4>
+                            <p>Experience Hassle-free Single sign-on with OKTA</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers sso/cloud.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>GOOGLE SSO </h4>
+                            <p>EXPERIENCE HASSLE-FREE SINGLE SIGN-ON WITH GOOGLE</p>
+                        </div>
+                    </div>
+                    <h4>Task Management</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers Task Management/boards.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Boards</h4>
+                            <p>Help you Configure the workflow, Add, prioritize, Track the stages of the task and keep a trail of every activity</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Featuers Task Management/Timesheet.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Timesheet </h4>
+                            <p>Simplified way to log work hours. Create, customise, monitor, and share Employee time sheets with QA Touch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-4">
+                    <h4 class="feature-heading">PRICING</h4>
+                    <div class="flex-feature">
+                        <i class="fa-solid fa-window-restore feature-img"></i>
+                        <div>
+                            <h4> Enterprise</h4>
+                            <p>For Large Organizations with Scalable and Customizable Test Management Solutions</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <i class="fa-solid fa-address-card feature-img"></i>
+                        <div>
+                            <h4> Professional </h4>
+                            <p>For QA teams with comprehensive test management requirements.$111.20 / Month ((40 Users))</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <i class="fa-regular fa-user feature-img"></i>
+                        <div>
+                            <h4> Startup</h4>
+                            <p>For QA teams that require advanced test management.$41.20 / Month ((10 Users))</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <i class="fa-solid fa-comment-dollar feature-img"></i>
+                        <div>
+                            <h4>Free</h4>
+                            <p>For QA teams with simple test management requirements.$0 (2 Users)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="integration-container">
+            <div class="integration-sub-cont">
+                <div class="integration">
+                    <h4> TWO WAY INTEGRATION</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Integration Two Way/jiracloud.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>JIRA Cloud</h4>
+                            <p>Plan, track, and manage their work</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Integration Two Way/monday.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Monday.com</h4>
+                            <p>Helps teams streamline their workflow, collaborate seamlessly, and manage complex</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Integration Two Way/github.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> GitHub</h4>
+                            <p>Code hosting platform for version control and collaboration</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Integration Two Way/gitlab.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>GitLab</h4>
+                            <p> Open source code repository and collaborative software development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration">
+                    <h4>ISSUE TRACKING INTEGRATION</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/jiraSoftware.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>JIRA Software</h4>
+                            <p> Proprietary issue tracking product that allows bug tracking and agile project management</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Trello.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Trello</h4>
+                            <p> Visual tool that empowers your team to manage any type of project, workflow, or task
+                                tracking</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/YouTrack.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> YouTrack</h4>
+                            <p> Lets you configure an Agile Board to work with the way you work</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Redmine-1.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Redmine</h4>
+                            <p>Flexible project management web application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration">
+                    <h4>COLLABORATE AND GET MORE</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Intergration Collobarate/slack.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Slack</h4>
+                            <p> Instant messaging program for professional and organizational communications</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Intergration Collobarate/Azure.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>Microsoft Azure Boards</h4>
+                            <p>Service for managing the work for your software projects. Teams need tools that flex and grow
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Intergration Collobarate/buggie.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Bugzilla</h4>
+                            <p>Open-source issue/bug tracking system that allows developers to keep track of outstanding
+                                problems</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Intergration Collobarate/bitbucket.webp" alt="" class="feature-img">
+                        <div>
+                            <h4> Bitbucket</h4>
+                            <p> Git based code hosting and collaboration tool, built for teams</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Intergration Issuse Tracking/Intergration Collobarate/asana-1.webp" alt="" class="feature-img">
+                        <div>
+                            <h4>Asana</h4>
+                            <p> helps you organize complex work across teams to drive business outcomes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration testimonial">
+                    <h4>TESTIMONIALS</h4>
+                    <div class="youtube-video">
+                        <iframe width="560" height="415" src="https://www.youtube.com/embed/1B64lrQHt4k?si=zGCG-yeVancAbEtG"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p> See all testimonials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-container">
+            <div class="resource-sub-cont">
+                <div class="resource ">
+                    <h4> PAST EVENTS</h4>
+                    <div class="resource-gap">
+                        <h4>Global Testers Summit 2024</h4>
+                        <h4>Global Tester’s Day 2024</h4>
+                        <h4>Tester’s Summit 2024</h4>
+                        <h4>Global Tester’s Day 2022</h4>
+                    </div>
+                   
+                </div>
+                <div class="resource">
+                    <h4 class="head-color">BLOG</h4>
+                    <div class="flex-feature">
+                        <img src="Assets/Resource Blog img/1-43.webp" alt="" class="resource-img">
+                        <div>
+                            <h4>Why QA Touch?</h4>
+                        </div>                     
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Resource Blog img/announcement.webp" alt="" class="resource-img">
+                        <div>
+                            <h4>What's New in QA Touch</h4>
+                        </div>                     
+                    </div>
+                    <div class="flex-feature">
+                        <img src="Assets/Resource Blog img/Asana-And-Basecamp-Or-something-.webp" alt="" class="resource-img">
+                        <div>
+                            <h4>Asana And Basecamp</h4>
+                        </div>                      
+                    </div>
+                    <h4>Read More </h4>
+                </div>
+                <div class="resource">
+                    <h4 class="head-color">OTHER RESOURCE</h4>
+                    <div class="flex-feature">
+                        <i class="fa-regular fa-lightbulb resource-img"></i>
+                        <div>
+                            <h4>Knowledge Base</h4>
+                            <p>For everything you need to know about QA Touch at one place</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <i class="fa-solid fa-map-location"></i>
+                        <div>
+                            <h4>Roadmap</h4>
+                            <p>Know our upcoming, In-process & Client Requirements</p>
+                        </div>
+                    </div>
+                    <div class="flex-feature">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div>
+                            <h4>API</h4>
+                            <p>QA Touch API</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="resource">
+                    <h4 class="head-color">PRODUCT UPDATES</h4>
+                    <div class="flex-feature">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <div>
+                            <h4>Release Notes</h4>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <!-- divakar code-->
+
+        <div class="sub-contain-1">
+            <div class="content-1">
+                <h4>Built By Testers For Testers</h4>
+                <div class="content-header">
+                    <h1>AI Driven Test Management Platform</h1>
+                </div>
+                
+                <p>QA Touch makes it easy for your developers and testers to collaborate and work together</p>
+                <div class="content-1-img">
+                    <img src="Assets/new-banner-image.webp" alt="new-banner-image">
+                </div>
+                <div class="content-1-btn">
+                    <button>SIGN UP FOR FREE<span><i class="fa-solid fa-circle-arrow-right"
+                                style="color: #dbdbe1;"></i></span></button>
+                </div>
+                <p>No credit card needed | Free Forever</p>
+            </div>
+            <div class="content-2">
+                <div class="content-2-img">
+                    <img src="Assets/HP_asset_white_bg.png.webp" alt="HP_asset_white_bg">
+                </div>
+                <div class="content-2-logo">
+                    <div class="logo-1"><img src="Assets/Company Logo/HAECO-IMG.webp" alt="HAECO-IMG" width="100%"></div>
+                    <div class="logo-2"><img src="Assets/Company Logo/coforge.webp" alt="coforge" width="100%"></div>
+                    <div class="logo-3"><img src="Assets/Company Logo/converage.webp" alt="converage" width="100%"></div>
+                    <div class="logo-4"><img src="Assets/Company Logo/creand.webp" alt="creand" width="100%"></div>
+                    <div class="logo-5"><img src="Assets/Company Logo/image-23.webp" alt="image-23" width="60%"></div>
+                    <div class="logo-6"><img src="Assets/Company Logo/image-49.webp" alt="image-49" width="80%"></div>
+                </div>
+            </div>
+            <div class="content-3-main">
+                <div class="content-3">
+                    <h2>Features Of This Test Case Management Tool We Know You’ll Love</h2>
+                    <div class="div-1">
+                        <div class="para-content-3">
+                            <div class="content-3-line">
+                                <span>Test Management</span>
+                                <a href="">
+                                    <p>Effortless precision in software quality with seamless Test Case Management.</p>
+                                </a>
+                            </div>
+                            <ul class="content-3-link">
+                                <li><a href=""><span>ChatGPT-Driven Test Case Creation</span></a></li>
+                                <li><a href=""><span>In-Built Bug Tracking</span></a></li>
+                                <li><a href=""><span>In-Built Timesheet</span></a></li>
+                                <li><a href=""><span>Inbuilt Mindmap</span></a></li>
+                                <li><a href=""><span>Audit Log</span></a></li>
+                                <li><a href=""><span>Agile Board</span></a></li>
+                                <li><a href=""><span>Seamless Dashboard</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="content-3-img">
+                            <img src="Assets/Test-Management.webp" alt="Test-Management" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-4">
+                <div class="para-content-4">
+                    <h2>QA Touch Integration</h2>
+                    <p>Connect with the tools and enhance your productivity.</p>
+                    <span class="points">15+ Major Apps, Simplified Workflows</span>
+                    <p>QA Touch supports integrations with major apps, streamlining processes and delivering a seamless
+                        experience for you and your QA team.</p>
+                    <button class="content-4-btn">EXPLORE INTEGRATIONS</button>
+                </div>
+                <div class="content-4-img">
+                    <img src="Assets/Test-management-for-B2B-testers.webp" alt="Test-management-for-B2B-testers"
+                        width="100%">
+                </div>
+            </div>
+            <div class="content-5">
+                <div class="content-5-box1 box">
+                    <img src="Assets/qatouch-logo-new.webp" alt="qatouch-logo-new" width="50%">
+                    <h2>Unlock Success: Explore Our Case Studies</h2>
+                    <button class="content-5-btn">EXPLORE MORE CASE STUDIES</button>
+                </div>
+                <div class="content-5-box2 box">
+                    <p>COMCAST</p>
+                    <img src="Assets/comcast-small.webp" alt="comcast-small">
+                    <p class="box-2-point">“Delivered smooth user experience free of flaws, stalls, and delays with custom
+                        test-cases and
+                        testing strategies with exceptional outcomes!”
+                    </p>
+                    <a href="">Learn More 
+                        <span class="icon-container">
+                            <span class="shot-arrow">
+                                <i class="fa-solid fa-circle-chevron-right"style="color: #ffffff;"></i>
+                             </span>                
+                            <span class="long-arrow">
+                                <i class="fa-solid fa-arrow-right-long fa-2xs"style="color: #63E6BE;"></i>
+                            </span>
+                        </span>
+                       
+    
+                    </a>
+                </div>
+                <div class="content-5-box3 box">
+                    <p>LEXISNEXIS</p>
+                    <img src="Assets/lexis.webp" alt="LEXISNEXIS">
+                    <p class="box-3-point">“Streamlined workflows, seamless avenues for integration and smoother interaction
+                        between tools, all
+                        powered by QA Touch.”
+                    </p>
+                    <a href="" >Learn More 
+                        <span class="icon-contain">
+                            <span class="shot-arrow-1">
+                                <i class="fa-solid fa-circle-chevron-right"style="color: #ffffff"></i>
+                            </span>
+                            <span class="long-arrow-1">
+                                <i class="fa-solid fa-arrow-right-long fa-2xs" style="color: #63E6BE;"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+    
+    
+            </div>
+        </div>
+
+        <!-- vignesh -->
+
+        <div class="main-contaner">
+            <div class="sub-contaner6">
+                <div class="content6">
+                  <div class="double-qoutes">
+                    <img src="Assets/ci_double-quotes-l.png" alt="" />
+                  </div>
+                  <div class="content6-para">
+                    <span>
+                      We have been using QA Touch Professional for afew months now and we
+                      love it.It is ease of use, flexible,and powerful for a test
+                      management platform.
+                    </span>
+                  </div>
+                  <div class="info">
+                    <p class="name">JULIE DOAN</p>
+                    <p>QA Lead At Pushint</p>
+                  </div>
+                </div>
+                <div class="content6-img">
+                  <img src="Assets/114.png" alt="" />
+                </div>
+              </div>
+              <div class="sub-contaner7">
+                <div class="content7-img">
+                  <img src="Assets/map.webp" alt="" />
+                </div>
+                <div class="content7-para">
+                  <h1>
+                    Discover why thousands of QA Teams select <span>QA Touch</span> to help them grow
+                  </h1>
+                  <div class="overall-teams">
+                      <div class="teams-one">
+                          <div class="line-one line" >
+                            <div class="number-one">
+                                <h1> 10,895+</h1>
+                                <p>projects</p>
+                          </div>
+                         
+                          </div>
+                      </div>
+                      <div class="teams-two">
+                          <div class="line-two line">
+                            <div class="number-two">
+                                <h1>2,137,846+</h1>
+                                <p>Test Cases</p>
+                            </div>
+                          </div>
+                        
+                      </div>
+                      <div class="teams-three">
+                          <div class="line-three line">
+                            <div class="number-three">
+                                <h1>15,000+</h1>
+                                <p>Teams Trust QA Touch</p>
+                            </div>
+                          </div>
+                          
+                      </div>
+                      <div class="teams-four">
+                          <div class="line-four line">
+                            <div class="number-four">
+                            <h1>100+</h1>
+                            <p>Trusted in 100+ countries</p>
+                        </div>
+                          </div>
+                          
+                      </div>
+          
+                  </div>
+                </div>
+                  
+              </div>
+              <div class="sub-contaner8">
+                <div class="content8">
+                  <div class="one">
+                    <h1 >Questions?</h1>
+                  </div>
+                  
+                  <h1>We’ve got answers!</h1>
+                  <p>Have questions? We’re here to help you.</p>
+                </div>
+                <div class="content8-one">
+                  <div class="content8-questions">
+                    <div class="questions-one questions">
+                      <a href=""><soan>1. What Is QA Touch?</span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-two questions">
+                      <a href=""><span>2. What Feature Does QA Touch Offer For Software Testing?</span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-three questions">
+                      <a href=""><span>3. How Long Will It Take My Team To Set Up QA Touch? </span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-four questions">
+                      <a href=""><span>4. Do You Provide Tech Support For Test Management? </span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-five questions">
+                      <a href=""><span>5. Why Is QA Touch The Best Test Management Tool For Me?</span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-six questions">
+                      <a href=""><span>6. Does QA Touch Support SSO Integrations?</span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-seven questions">
+                      <a href=""><span>7. How Many Integrations Do You Provide? </span></a><i class="fa-solid fa-plus"></i>
+                      
+                    </div>
+                    <div class="questions-eigth questions">
+                      <a href=""><span>8. What Is A Test Management Tool?</span></a><i class="fa-solid fa-plus"></i>
+                     
+                    </div>
+                  </div>
+                      </div>
+                    
+                    
+                  
+                
+              
+              </div>
+              <div class="sub-contaner9">
+                <div class="content9">
+                  <h1>Enhance your test case management process today!</h1>
+                  <p>No Credit Card Required. Start testing! Choose a Plan Later
+                    that fits your testing requirements</p>
+                </div>
+                <div class="content9-btn">
+                  <button>GET STARTED FOR FREE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+              <footer class="sub-contaner10">
+                <div class="contaner10-1">
+                    <div class="contaner10-one">
+                    <img src="Assets/QA-light.png" alt="">
+                    <p class="para-one">QA Touch is an AI-powered test management platform, created by testers for testers. It simplifies collaboration between your development and QA teams, driving efficiency and delivering quality results.</p>
+                    <p class="para-two">1901 E Palm Valley Blvd</p>
+                    <p class="para-three"> Suite 109</p>
+                    <p class="para-four">Round Rock, TX 78664</p>
+                    <p class="para-five">info@qatouch.com</p>
+                    <hr>
+                    <div class="content9-icon">
+                      <i>
+                          <img src="Assets/Footer Img/footer-fb-icon.webp" alt="">
+                      </i>
+                      <i>
+                          <img src="Assets/Footer Img/x-twitter-white.svg" alt="">
+                      </i>
+                      <i>
+                          <img src="Assets/Footer Img/footer-youtube-icon.webp" alt="">
+                      </i>
+                      <i>
+                        <img src="Assets/Footer Img/linkedin-icon-qatouch.webp" alt="">
+                      </i>
+                    </div>
+                   
+                    
+                  </div>
+                  <div class="contaner10-two">
+                    <div class="contaner6-three">
+                      <div class="contaner10-ul-one">
+                        <ul>
+                          <span>PRODUCT </span>
+                          <li>Features</li>
+                          <li>Integrations </li>
+                          <li>Testimonials </li>
+                          <li>Pricing </li>
+                          <li>Request A Demo </li>
+                          <li>Login </li>
+                        </ul>
+                      </div>
+                      
+                      <div class="contaner10-ul-two">
+                        <ul>
+                          <span>RESOURCES</span>
+                          <li>QA Masterclass</li>
+                            <li>Community </li>
+                            <li>About Us </li>
+                            <li>Contact Us</li>
+                            <li> QA Touch API</li>
+                            <li> Help</li>
+                          </ul>
+                        </div>
+                    </div>
+                      <div class="contaner10-three-hello">
+                        <div class="content10-help">
+                          <p>HELLO, NEED ANY HELP</p>
+                          <p>Have questions on how to begin or anything related to our features and integrations? Starting from documentation to product videos, we're just one click away.</p>
+                          <p>Explore Now</p>
+                        </div>
+                     
+                      </div>
+                    </div>
+                    
+                    
+                      <div class="contaner10-three">
+                            <span>
+                              NEWS AND RECENT BLOGS
+                            </span>
+                            <div class="contaner10-three-news">
+                              <div class="content10-img-3">
+                                <img src="Assets/Footer Img/A-Useful-Guide-on-the-Ten-Best-Software-Certification-Courses-in-2020-1-300x158.jpg" alt="">
+                                <p>A Useful Guide on the 10 Best Software Testing Certification Courses in 2020</p>
+                              </div>
+                              <div class="contaner10-img-1">
+                                <img src="Assets/Footer Img/ADA-compliance-checklist.webp" alt="">
+                                <p>A Complete Checklist for ADA Compliance</p>
+          
+                              </div>
+                            <div class="contaner10-img-2">
+                                <img src="Assets/Footer Img/10-Tips-to-Get-First-10-Customers-for-your-new-SaSS-Product.jpg" alt="">
+                                <p>10 Handy Tips to Get your First 10 Customers for your New SaaS Product</p>
+                                  
+                           </div>
+                            <p>More...</p>
+                        </div>
+                        <div class="content10-form">
+                          <form action="">
+                            <input type="email" name="" id="" placeholder="Email**">
+                            <button>SUBSCRIBE</button>
+                          </form>
+                          
+                        </div>
+                       
+                      </div>
+                 
+               
+              </div>
+              <div class="line-hr">
+                <hr>
+               </div>
+               <div class="bottom-one">
+                <div class="bottom">
+                  <p>Copyright © 2024, QA Touch, <a href="">Free Test Case Management Tool</a>. All rights reserved. Initiative by <a href="">DCKAP</a> </p>
+                 </div>
+                 <div class="bottom-two">
+                  <a href="">Terms Of Use</a>  <a href=""> Privacy Policy</a>
+                 </div>
+               </div>
+               
+              </footer>
+              
+        </div>
+    
+
+        
+      
+    </div>
+    
+</body>
+<script src="nav.js"></script>
+</html>

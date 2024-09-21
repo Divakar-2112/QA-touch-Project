@@ -1,0 +1,39 @@
+.dckap-cta-module {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+    text-align: center;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.dckap-cta-module a.dckap-cta-module-link {
+    background: #3b91fa;
+    color: #FFF;
+    padding: 15px 25px;
+    text-decoration: none !important;
+    font-weight: 700;
+    display: inline-block;
+}
+.dckap-cta-module h4 {
+    font-family: Montserrat;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 30px !important;
+    line-height: 2 !important;
+}
+.dckap-cta-module p {
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+@media(max-width:780px) {
+	.dckap-cta-module {
+	    padding: 30px;
+	}
+	.dckap-cta-module h4 {
+	    color: #FFF;
+	    font-size: 20px !important;
+	    line-height: 1.5 !important;
+	}
+}

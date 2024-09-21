@@ -1,0 +1,1 @@
+if(console){var cookiedomainwarning='Error: The domain WWW.QATOUCH.COM is not authorized to show the cookie banner for domain group ID 3f38f484-c441-4ace-b225-57cf31a37047. Please add it to the domain group in the Cookiebot Manager to authorize the domain.';if(typeof console.warn === 'function'){console.warn(cookiedomainwarning)}else{console.log(cookiedomainwarning)}};
