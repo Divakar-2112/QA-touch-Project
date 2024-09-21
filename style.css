@@ -1010,8 +1010,8 @@ button{
        /* text-align: center; */
         display: flex;
         margin-top: 20px;
-        justify-content: center;
-        gap: 400px;   
+        justify-content: space-around;
+        /* gap: 400px;    */
    }
    .bottom-one a{
        color: white;
@@ -1192,15 +1192,81 @@ button{
     }
     .sub-contaner10{
         width: 100%;
-        margin: 0px 40px;
+        /* margin: 0px 40px; */
     }
     .contaner10-1{
         display: flex;
         flex-direction: column;
+        width: 90%;
     }
     .contaner10-one{
         width: 50%;
     }
+    .contaner10-two{
+        width: 90%;
+        margin: 20px 20px;
+    }
+    .contaner10-two span{
+        padding: 0px;
+    }
+    .contaner10-ul-one{
+        width: 40%;
+    }
+    .contaner10-three-hello{
+        width: 50%;
+        margin: 20px 22px;
+    }
+    .contaner10-three{
+        width: 90%;
+        text-align: left;
+        margin: 10px 20px 10px 5px;
+
+
+    }
+    .contaner10-three span{
+        margin: 20px 20px;
+    }
+    .contaner10-three-news{
+        margin: 20px 20px;
+    }
+    .content10-form{
+        margin: 20px 20px;
+        width: 90%;
+    }
+    .content10-form input{
+        /* margin: 20px 20px; */
+        width: 80%;
+    }
+    .content10-form button{
+        /* margin: 20px 20px; */
+        width: 30%;
+    }
+    .bottom-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .line-hr{
+        width: 80%;
+    }
+    .bottom-one{
+        width: 80%;
+        text-align: center;
+    }
+    .bottom p{
+        width: 100%;
+        text-align: center;
+        margin: 10px 40px;
+        
+    }
+    .bottom-two a{
+        margin: 0px 10px;       
+        
+    }
+    .bottom-two{
+        margin: 0px 00px 0px 90px;
+        margin-bottom: 40px;
+    } 
+
    
 
 
@@ -1219,7 +1285,7 @@ button{
 
 @media all and (max-width:970px){
     .menu-line{
-        display: block;
+        display: none;
         
     }
     .nav-list{
